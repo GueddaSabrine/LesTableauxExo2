@@ -24,21 +24,14 @@ namespace LesTableauxExo2
             //Ajouter C dans la liste.
             //Afficher la liste.
 
-            // Create a list of parts.
-            //List<Part> parts = new List<Part>();
-            //List<string> AuthorList = new List<string>();
-
-            /*List<string> languages = new List<string>();
-            string[] language = {"HTML", "CSS", "Javacrit", "jQuery", "PHP", "Bootstrap", "Java"};
-            Console.WriteLine("Affichage de la liste de départ: " + languages);*/
-
             List<string> languages = new List<string> {"HTML", "CSS", "Javacrit", "jQuery", "PHP", "Bootstrap", "Java"};
             Console.WriteLine("liste compléte des différents langauges : ");
 
-            for (int i = 0; i < languages.Count; i++)
+            foreach(String language in languages)
+            //for (int i = 0; i < languages.Count; i++)
 
             {
-                Console.WriteLine(languages[i]);
+                Console.WriteLine(languages); //avec i pour FOR languages[i]
             }
 
             Console.WriteLine("4e élément de la liste : " + languages[3]); //4e élément donc index 3
@@ -53,10 +46,6 @@ namespace LesTableauxExo2
                 Console.WriteLine(languages[i]);
 
             }
-            
-
-
-
         }
     }
 }
